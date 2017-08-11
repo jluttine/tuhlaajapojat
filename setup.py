@@ -6,6 +6,5 @@ if __name__ == "__main__":
         install_requires = ['sportsteam'],
         packages         = find_packages(),
         name             = "tuhlaajapojat",
-        version          = "1.0",
+        version          = "1.1",
     )
-
