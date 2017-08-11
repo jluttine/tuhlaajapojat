@@ -2,7 +2,9 @@
 
 from sportsteam.settings.prod import *
 
-DEBUG = False
+DEBUG = os.getenv("TUHLAAJAPOJAT_DEBUG", "0").lower() not in [
+    "0", "false", "off"
+]
 
 TEAM_NAME = 'FC Tuhlaajapojat'
 TEAM_SLUG = 'tuhlaajapojat'
